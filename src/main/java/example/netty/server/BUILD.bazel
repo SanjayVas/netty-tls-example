@@ -1,0 +1,16 @@
+load("@rules_java//java:defs.bzl", "java_binary", "java_library")
+
+java_library(
+    name = "server",
+    srcs = glob(["*.java"]),
+    deps = [
+        "//imports/java/io/netty",
+        "//imports/java/picocli",
+        "//src/main/java/example/netty/common",
+    ],
+)
+
+java_binary(
+    name = "Server",
+    runtime_deps = [":server"],
+)

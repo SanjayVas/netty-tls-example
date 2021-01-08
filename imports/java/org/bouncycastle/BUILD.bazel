@@ -1,0 +1,6 @@
+package(default_visibility = ["//visibility:public"])
+
+alias(
+    name = "provider",
+    actual = "@maven//:org_bouncycastle_bcprov_jdk15on",
+)
