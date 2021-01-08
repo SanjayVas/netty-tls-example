@@ -3,6 +3,7 @@ load("@rules_java//java:defs.bzl", "java_binary", "java_library")
 java_library(
     name = "server",
     srcs = glob(["*.java"]),
+    runtime_deps = ["//imports/java/io/netty:tcnative"],
     deps = [
         "//imports/java/io/netty",
         "//imports/java/picocli",

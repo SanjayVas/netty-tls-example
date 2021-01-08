@@ -4,3 +4,8 @@ alias(
     name = "netty",
     actual = "@maven//:io_netty_netty_all",
 )
+
+alias(
+    name = "tcnative",
+    actual = "@maven//:io_netty_netty_tcnative_boringssl_static",
+)

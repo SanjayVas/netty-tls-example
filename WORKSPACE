@@ -20,6 +20,8 @@ maven_install(
         "io.netty:netty-all:4.1.56.Final",
         "info.picocli:picocli:4.6.1",
         "org.bouncycastle:bcprov-jdk15on:1.68",
+        "io.netty:netty-all:4.1.56.Final",
+        "io.netty:netty-tcnative-boringssl-static:2.0.35.Final",
     ],
     repositories = ["https://repo1.maven.org/maven2"],
 )
